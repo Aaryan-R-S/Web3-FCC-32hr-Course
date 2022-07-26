@@ -1,5 +1,6 @@
 async function main() {
-    // http://127.0.0.1:8545
+  console.log("Hi");
+  // http://127.0.0.1:8545
 }
 
 main()
