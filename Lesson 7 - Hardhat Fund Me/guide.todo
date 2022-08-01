@@ -1,0 +1,18 @@
+☐ yarn add --dev hardhat
+☐ yarn hardhat
+☐ yarn add --dev "hardhat@^2.9.9" "@nomicfoundation/hardhat-toolbox@^1.0.1" "@nomicfoundation/hardhat-network-helpers@^1.0.0" "@nomicfoundation/hardhat-chai-matchers@^1.0.0" "@nomiclabs/hardhat-ethers@^2.0.0" "@nomiclabs/hardhat-etherscan@^3.0.0" "chai@^4.2.0" "ethers@^5.4.7" "hardhat-gas-reporter@^1.0.8" "solidity-coverage@^0.7.21" "@typechain/hardhat@^6.1.2" "typechain@^8.1.0" "@typechain/ethers-v5@^10.1.0" "@ethersproject/abi@^5.4.7" "@ethersproject/providers@^5.4.7"
+☐ yarn add --dev dotenv
+☐ yarn add --dev @nomiclabs/hardhat-waffle
+☐ yarn add --dev solidity-coverage
+☐ Add your contracts to `contracts` folder
+☐ yarn add --dev @chainlink/contracts
+☐ yarn hardhat compile
+☐ yarn add --dev hardhat-deploy
+☐ yarn add --dev @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
+☐ yarn hardhat deploy --tags mocks
+☐ yarn hardhat deploy
+☐ yarn hardhat deploy --tags all
+☐ yarn hardhat deploy --tags fundme
+☐ yarn hardhat deploy --network mumbai
+☐ yarn hardhat verify CONTRACT_ADDR --network mumbai
+☐ yarn hardhat node
