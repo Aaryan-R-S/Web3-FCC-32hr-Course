@@ -1,10 +1,11 @@
-// require("@nomicfoundation/hardhat-toolbox")
+require("@nomicfoundation/hardhat-toolbox")
 require("dotenv").config()
 require("@nomiclabs/hardhat-ethers")
 require("@nomiclabs/hardhat-etherscan")
 require("hardhat-deploy")
 require("hardhat-gas-reporter")
 require("solidity-coverage")
+// require("@nomiclabs/hardhat-waffle")
 /** @type import('hardhat/config').HardhatUserConfig */
 
 const POLYGON_MUMBAI_RPC_PROVIDER = process.env.POLYGON_MUMBAI_RPC_PROVIDER || "https://rpc-mumbai.maticvigil.com/api-key"
@@ -31,7 +32,7 @@ module.exports = {
         apiKey: POLYGONSCAN_API_KEY,
     },
     gasReporter: {
-        enabled: false,
+        enabled: true,
         outputFile: "gas-report.txt",
         noColors: true,
         currency: "INR",

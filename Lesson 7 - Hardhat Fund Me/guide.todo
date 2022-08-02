@@ -16,3 +16,5 @@
 ☐ yarn hardhat deploy --network mumbai
 ☐ yarn hardhat verify CONTRACT_ADDR --network mumbai
 ☐ yarn hardhat node
+☐ yarn hardhat test
+☐ yarn hardhat test --grep "some matching text"
