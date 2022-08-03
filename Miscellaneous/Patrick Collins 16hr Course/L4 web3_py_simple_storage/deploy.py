@@ -44,7 +44,7 @@ abi = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["abi"]
 # Connect to Ganache
 # w3 = Web3(Web3.HTTPProvider("http://127.0.0.1:8545"))
 # Connect to Rinkeby
-w3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/4722dcbb3d284e368e5001189c22d63d"))
+w3 = Web3(Web3.HTTPProvider("https://rinkeby.infura.io/v3/your-api-key"))
 # chain_id = 1337
 chain_id = 4
 my_address = "0xEcC946f4F2138269482f312BEA7cC435604343C2"

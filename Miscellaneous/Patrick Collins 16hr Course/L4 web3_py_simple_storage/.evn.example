@@ -1,0 +1,2 @@
+export PRIVATE_KEY=your-private-key
+export SECRET_NUM=your-secret-num;
