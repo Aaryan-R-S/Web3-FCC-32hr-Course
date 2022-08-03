@@ -1,3 +1,4 @@
+// Installations
 ☐ yarn add --dev hardhat
 ☐ yarn hardhat
 ☐ yarn add --dev "hardhat@^2.9.9" "@nomicfoundation/hardhat-toolbox@^1.0.1" "@nomicfoundation/hardhat-network-helpers@^1.0.0" "@nomicfoundation/hardhat-chai-matchers@^1.0.0" "@nomiclabs/hardhat-ethers@^2.0.0" "@nomiclabs/hardhat-etherscan@^3.0.0" "chai@^4.2.0" "ethers@^5.4.7" "hardhat-gas-reporter@^1.0.8" "solidity-coverage@^0.7.21" "@typechain/hardhat@^6.1.2" "typechain@^8.1.0" "@typechain/ethers-v5@^10.1.0" "@ethersproject/abi@^5.4.7" "@ethersproject/providers@^5.4.7"
@@ -9,12 +10,28 @@
 ☐ yarn hardhat compile
 ☐ yarn add --dev hardhat-deploy
 ☐ yarn add --dev @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
+
+// Deploying the contracts
+// .js files t be written in deploy/ with proper naming to tell hardhat order of deployment
 ☐ yarn hardhat deploy --tags mocks
 ☐ yarn hardhat deploy
 ☐ yarn hardhat deploy --tags all
 ☐ yarn hardhat deploy --tags fundme
 ☐ yarn hardhat deploy --network mumbai
+☐ yarn hardhat deploy --network mumbai --tags all
 ☐ yarn hardhat verify CONTRACT_ADDR --network mumbai
-☐ yarn hardhat node
-☐ yarn hardhat test
-☐ yarn hardhat test --grep "some matching text"
+
+// Testing the contracts
+// Basically unit tests run on contracts deployed on local network and staging tests run on mainnet
+// So if you have done proper testing on local network then staging tests become optional
+☐ yarn hardhat test [For unit tests]
+☐ yarn hardhat test --grep "some matching text" [For unit tests]
+☐ yarn hardhat test --network hardhat [For unit tests]
+☐ yarn hardhat test --network mumbai [For staging tests]
+
+// Running scripts
+// Scripts are used for carrying out different functions associated with the contracts after they are deployed
+// Interact with contracts using scripts
+☐ yarn hardhat node (in separate terminal)
+☐ yarn hardhat run scripts/fund.js --network localhost
+☐ yarn hardhat run scripts/withdraw.js --network localhost
