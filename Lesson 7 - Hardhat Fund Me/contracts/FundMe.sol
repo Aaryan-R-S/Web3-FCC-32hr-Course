@@ -37,7 +37,7 @@ contract FundMe {
 
     // 3. Events
 
-    // 4. Events
+    // 4. Modifiers
     modifier onlyOwner() {
         // require(msg.sender == owner), "FundeMe__NotOwner";
         // MORE GAS OPTIMIZED

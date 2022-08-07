@@ -1,0 +1,34 @@
+[Installations]
+☐ yarn add --dev hardhat
+☐ yarn hardhat
+☐ yarn add --dev @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers @nomiclabs/hardhat-etherscan @nomiclabs/hardhat-waffle chai ethereum-waffle hardhat hardhat-contract-sizer hardhat-deploy hardhat-gas-reporter prettier prettier-plugin-solidity solhint solidity-coverage dotenv
+
+[Compiling smart contracts]
+☐ Add your contracts to `contracts` folder
+☐ yarn add --dev @chainlink/contracts
+☐ yarn hardhat compile
+
+[Deploying the contracts]
+☐ yarn hardhat deploy --tags mocks
+☐ yarn hardhat deploy
+☐ yarn hardhat deploy --tags all
+☐ yarn hardhat deploy --network mumbai
+☐ yarn hardhat deploy --network mumbai --tags all
+☐ yarn hardhat verify CONTRACT_ADDR --network mumbai [contract address: 0x387806072409D0aDca4197c43849A0FfE5c206fa]
+☐ yarn hardhat verify CONTRACT_ADDR --network rinkeby [contract address: 0xaC47371A6DBF4Ebb1695D85C5591038e9Bef3148]
+
+[Testing the contracts]
+// Basically unit tests run on contracts deployed on local network and staging tests run on mainnet
+// So if you have done proper testing on local network then staging tests become optional
+☐ yarn hardhat test [For unit tests]
+☐ yarn hardhat test --grep "some matching text" [For unit tests]
+☐ yarn hardhat test --network hardhat [For unit tests]
+☐ yarn hardhat test --network mumbai [For staging tests]
+☐ yarn hardhat test --network rinkeby [For staging tests] (Not working as usual)
+
+[Running scripts]
+// Scripts are used for carrying out different functions associated with the contracts after they are deployed
+// Interact with contracts using scripts
+☐ yarn hardhat node (in separate terminal)
+☐ yarn hardhat run scripts/mockOffChain.js --network localhost
+☐ yarn hardhat run scripts/enter.js --network localhost
