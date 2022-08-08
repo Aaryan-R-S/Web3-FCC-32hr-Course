@@ -1,0 +1,4 @@
+☐ yarn create next-app . [creates next app in same folder otherwise it will be created in a new folder]
+☐ yarn next dev
+☐ yarn add --dev prettier
+☐ 

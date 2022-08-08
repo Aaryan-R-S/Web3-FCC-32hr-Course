@@ -1,0 +1,27 @@
+{
+  "name": "frontend-smart-contract-lottery-fcc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@walletconnect/web3-provider": "^1.8.0",
+    "@web3auth/web3auth": "^1.1.4",
+    "magic-sdk": "^9.0.0",
+    "moralis": "^1.11.0",
+    "next": "12.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-moralis": "^1.4.0",
+    "web3uikit": "0.1.170"
+  },
+  "devDependencies": {
+    "eslint": "8.21.0",
+    "eslint-config-next": "12.2.4",
+    "prettier": "^2.7.1"
+  }
+}
