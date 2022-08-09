@@ -12,10 +12,12 @@
 ☐ yarn hardhat deploy --tags mocks
 ☐ yarn hardhat deploy
 ☐ yarn hardhat deploy --tags all
-☐ yarn hardhat deploy --network mumbai
-☐ yarn hardhat deploy --network mumbai --tags all
-☐ yarn hardhat verify CONTRACT_ADDR --network mumbai [contract address: 0x387806072409D0aDca4197c43849A0FfE5c206fa]
+☐ yarn hardhat deploy --network polygonMumbai
+☐ yarn hardhat deploy --network polygonMumbai --tags all
+☐ yarn hardhat verify CONTRACT_ADDR --network polygonMumbai [contract address: 0x387806072409D0aDca4197c43849A0FfE5c206fa]
 ☐ yarn hardhat verify CONTRACT_ADDR --network rinkeby [contract address: 0xaC47371A6DBF4Ebb1695D85C5591038e9Bef3148]
+
+// Configure vrf.chain.links and keepers.chain.link subscriptions
 
 [Testing the contracts]
 // Basically unit tests run on contracts deployed on local network and staging tests run on mainnet
@@ -23,7 +25,7 @@
 ☐ yarn hardhat test [For unit tests]
 ☐ yarn hardhat test --grep "some matching text" [For unit tests]
 ☐ yarn hardhat test --network hardhat [For unit tests]
-☐ yarn hardhat test --network mumbai [For staging tests]
+☐ yarn hardhat test --network polygonMumbai [For staging tests]
 ☐ yarn hardhat test --network rinkeby [For staging tests] (Not working as usual)
 
 [Running scripts]
