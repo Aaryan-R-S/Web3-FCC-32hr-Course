@@ -26,7 +26,7 @@
 ☐ yarn hardhat test --grep "some matching text" [For unit tests]
 ☐ yarn hardhat test --network hardhat [For unit tests]
 ☐ yarn hardhat test --network polygonMumbai [For staging tests]
-☐ yarn hardhat test --network rinkeby [For staging tests] (Not working as usual)
+☐ yarn hardhat test --network rinkeby [For staging tests]
 
 [Running scripts]
 // Scripts are used for carrying out different functions associated with the contracts after they are deployed
@@ -34,3 +34,8 @@
 ☐ yarn hardhat node (in separate terminal)
 ☐ yarn hardhat run scripts/mockOffChain.js --network localhost
 ☐ yarn hardhat run scripts/enter.js --network localhost
+
+[Status]
+☐ Hardhat - Everything Working
+☐ Rinkeby - Staging Test not working while website does work
+☐ Mumbai - Website not working while staging test does work

@@ -1,4 +1,5 @@
 const { ethers, network } = require("hardhat")
+const { developmentChains, networkConfig } = require("../helper-hardhat-config")
 
 async function mockKeepers() {
     const winETH = await ethers.getContract("WinETH")
@@ -12,6 +13,9 @@ async function mockKeepers() {
         if (network.config.chainId == 31337) {
             await mockVrf(requestId, winETH)
         }
+        else{
+            await testnetVrf(requestId, winETH)
+        }
     } else {
         console.log("No upkeep needed!")
     }
@@ -21,6 +25,15 @@ async function mockVrf(requestId, winETH) {
     console.log("We on a local network? Ok let's pretend...")
     const vrfCoordinatorV2Mock = await ethers.getContract("VRFCoordinatorV2Mock")
     await vrfCoordinatorV2Mock.fulfillRandomWords(requestId, winETH.address)
+    console.log("Responded!")
+    const recentWinner = await winETH.getRecentWinner()
+    console.log(`The winner is: ${recentWinner}`)
+}
+
+async function testnetVrf(requestId, winETH) {
+    console.log("We on a testnet? Ok let's pretend...")
+    const vrfCoordinatorV2 = await ethers.getContract(networkConfig[network.config.chainId]["vrfCoordinatorV2"])
+    await vrfCoordinatorV2.fulfillRandomWords(requestId, winETH.address)
     console.log("Responded!")
     const recentWinner = await winETH.getRecentWinner()
     console.log(`The winner is: ${recentWinner}`)

@@ -12,7 +12,6 @@ export default function LotteryEntrance() {
     const chainId = parseInt(chainIdHex)
     // console.log(`ChainId is ${chainId}`)
     const winETHAddress = (chainId in contractAddresses ? contractAddresses[chainId][0] : null)
-
     // State hooks
     // https://stackoverflow.com/questions/58252454/react-hooks-using-usestate-vs-just-variables
     const [entranceFee, setEntranceFee] = useState("0")
