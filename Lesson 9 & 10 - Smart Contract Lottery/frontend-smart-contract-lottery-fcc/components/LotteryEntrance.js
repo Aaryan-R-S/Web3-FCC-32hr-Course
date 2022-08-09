@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import { useNotification } from "web3uikit"
 import { ethers } from "ethers"
 
+// Listen for events and update frontend
 export default function LotteryEntrance() {
     const { Moralis, isWeb3Enabled, chainId: chainIdHex } = useMoralis()
     // These get re-rendered every time due to our connect button!
@@ -21,7 +22,7 @@ export default function LotteryEntrance() {
     const dispatch = useNotification()
 
     const {
-        runContractFunction: enterWinETH,
+        runContractFunction: enterWinETH,   // it means destructure the `runContractFunction` and rename it to `enterWinETH`
         data: enterTxResponse,
         isLoading,
         isFetching,
@@ -73,7 +74,6 @@ export default function LotteryEntrance() {
 
     useEffect(() => {
         if (isWeb3Enabled && winETHAddress) {
-            console.log("ok");
             updateUIValues()
         }
     }, [isWeb3Enabled])
