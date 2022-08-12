@@ -20,7 +20,7 @@
 // Configure vrf.chain.links and keepers.chain.link subscriptions
 
 [Testing the contracts]
-// Basically unit tests run on contracts deployed on local network and staging tests run on mainnet
+// Basically unit tests run on contracts deployed on local network and staging tests run on testnet/mainnet
 // So if you have done proper testing on local network then staging tests become optional
 ☐ yarn hardhat test [For unit tests]
 ☐ yarn hardhat test --grep "some matching text" [For unit tests]

@@ -1,0 +1,66 @@
+[Installations]
+☐ yarn add --dev hardhat
+☐ yarn hardhat
+☐ yarn add --dev @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers @nomiclabs/hardhat-etherscan @nomiclabs/hardhat-waffle chai ethereum-waffle hardhat hardhat-contract-sizer hardhat-deploy hardhat-gas-reporter prettier prettier-plugin-solidity solhint solidity-coverage dotenv
+
+[Compiling smart contracts]
+☐ Add your contracts to `contracts` folder
+☐ yarn add --dev @openzeppelin/contracts
+☐ yarn add --dev @chainlink/contracts
+☐ yarn hardhat compile
+
+[Deploying the contracts]
+☐ yarn hardhat deploy
+☐ yarn hardhat deploy --tags mocks
+☐ yarn hardhat deploy --tags mocks,randomipfs
+☐ yarn hardhat deploy --network rinkeby --tags main
+☐ yarn hardhat deploy --network polygonMumbai --tags main
+☐ yarn hardhat deploy --network rinkeby --tags mint
+☐ yarn hardhat deploy --network polygonMumbai --tags mint
+☐ yarn hardhat verify CONTRACT_ADDR --network polygonMumbai
+☐ yarn hardhat verify --network <NETWORK> <CONTRACT_ADDRESS> <CONSTRUCTOR_PARAMETERS>
+
+[Testing the contracts]
+// Basically unit tests run on contracts deployed on local network and staging tests run on testnet/mainnet
+// So if you have done proper testing on local network then staging tests become optional
+☐ yarn hardhat test [For unit tests] [Also ensure that 04-deploy file is not there at time of running tests]
+☐ yarn hardhat test --grep "some matching text" [For unit tests]
+☐ yarn hardhat test --network hardhat [For unit tests]
+☐ yarn hardhat test --network polygonMumbai [For staging tests]
+
+[NFTs Upload]
+☐ yarn add --dev path
+☐ yarn add --dev @pinata/sdk
+// OR
+☐ yarn add --dev nft.storage
+☐ yarn add --dev base64-sol
+
+[Running scripts]
+// Scripts are used for carrying out different functions associated with the contracts after they are deployed
+// Interact with contracts using scripts
+☐ yarn hardhat node (in separate terminal)
+☐ yarn hardhat run scripts/{fileName}.js --network {networkName}
+
+[Status]
+☐ Hardhat - Everything Working
+☐ Mumbai - Everything Working
+☐ Rinkeby - Everything Working except Random IPFS NFT
+
+[Methods]
+☐ Basic NFT
+☐ Random IPFS NFT
+    - Pros: Cheap
+    - Cons: Someone needs to pin our data
+☐ Dynamic SVG NFT
+    - Pros: The data is on-chain!
+    - Cons: MUCH more expensive!
+
+[Contract Addresses]
+☐ Rinkeby
+    - Basic NFT: 0xb247309c20AabA43df4A29B39ad828EE07467D29
+    - Dynamic SVG NFT: 0x66817A3da035206133Ff1cE98A57da885F9522C9
+    - Random IPFS NFT: 0x2C7C074Ace9D02c1817F4Ea981D96f77D780e36f
+☐ Polygon Mumbai
+    - Basic NFT: 0x176d4aBD2F7830C16bf8a9eC24D17fb5B983D98D
+    - Dynamic SVG NFT: 0xA650C4f79f66d2B85b14629d542a14372b9A472F    
+    - Random IPFS NFT: 0xe006431dbc0E27113017AFaC398F065D29cfC5dA
