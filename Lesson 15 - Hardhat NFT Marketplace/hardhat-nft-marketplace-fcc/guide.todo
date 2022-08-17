@@ -26,8 +26,8 @@
 // Scripts are used for carrying out different functions associated with the contracts after they are deployed
 // Interact with contracts using scripts
 ☐ yarn hardhat node (in separate terminal)
-☐ yarn hardhat run scripts/mint-and-list.js --network localhost
-☐ yarn hardhat run scripts/mint-and-list.js --network polygonMumbai
+☐ yarn hardhat run scripts/mint-and-list-item.js --network localhost
+☐ yarn hardhat run scripts/mint-and-list-item.js --network polygonMumbai
 
 [Status]
 ☐ Hardhat - Everything Working

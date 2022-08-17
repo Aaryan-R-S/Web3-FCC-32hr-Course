@@ -8,5 +8,13 @@
 ☐ yarn add web3uikit@0.1.170
 ☐ yarn add --dev tailwindcss postcss autoprefixer 
 ☐ yarn tailwindcss init -p [follow the process then given at tailwind installation docs]
-☐ yarn next build
-☐ yarn next export
+☐ Setup moralis server and download from [https://github.com/fatedier/frp/releases]
+☐ ./frpc.exe -c frpc.ini
+☐ OR instead of above two steps do `yarn global add moralis-admin-cli` then add moralis-admin-cli (or install using npm i then no need to add to PATH) to your path then make changes to package.json
+☐ yarn moralis:sync
+☐ Ensure resetting local chain at moralis dapp once starting localhost again and again along with moralis db
+☐ node addEvents.js (after adding the events to listen in `addEvents.js`)
+☐ yarn moralis:cloud (after adding what to do with relations when listened an event in `updateActiveItems.js`)
+
+[Status]
+    ☐ Everything working fine - try importing account again if not working

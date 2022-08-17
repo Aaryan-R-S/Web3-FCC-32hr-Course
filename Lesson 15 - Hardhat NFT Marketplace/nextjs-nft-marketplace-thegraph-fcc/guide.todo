@@ -1,0 +1,16 @@
+☐ yarn create next-app . [creates next app in same folder otherwise it will be created in a new folder]
+☐ yarn next dev
+☐ yarn add --dev prettier
+☐ yarn add moralis react-moralis
+☐ yarn add @walletconnect/web3-provider
+☐ yarn add magic-sdk
+☐ yarn add @web3auth/web3auth
+☐ yarn add web3uikit@0.1.170
+☐ yarn add --dev tailwindcss postcss autoprefixer 
+☐ yarn tailwindcss init -p [follow the process then given at tailwind installation docs]
+☐ yarn add @apollo/client
+☐ yarn add graphql
+
+[Status]
+    ☐ Everything working fine - try importing account again if not working
+    ☐ Go to `/graphExample` first then go to home page

@@ -1,0 +1,38 @@
+☐ Assuming contracts are deployed on rinkeby and verified
+☐ npm install -g @graphprotocol/graph-cli
+☐ graph init --studio nft-marketplace-fcc
+☐ Update files refer Patrick Collins Vid for that 
+☐ graph codegen
+☐ More commands at: https://thegraph.com/studio/subgraph/nft-marketplace-fcc/
+
+☐ Logs (saved in case of errors)
+√ Version Label (e.g. v0.0.1) · v0.0.1
+Skip migration: Bump mapping apiVersion from 0.0.1 to 0.0.2
+Skip migration: Bump mapping apiVersion from 0.0.2 to 0.0.3
+Skip migration: Bump mapping apiVersion from 0.0.3 to 0.0.4
+Skip migration: Bump mapping apiVersion from 0.0.4 to 0.0.5
+Skip migration: Bump mapping apiVersion from 0.0.5 to 0.0.6
+Skip migration: Bump manifest specVersion from 0.0.1 to 0.0.2
+Skip migration: Bump manifest specVersion from 0.0.2 to 0.0.4
+√ Apply migrations
+√ Load subgraph from subgraph.yaml
+Compile data source: NftMarketplace => build\NftMarketplace\NftMarketplace.wasm
+√ Compile subgraph
+Copy schema file build\schema.graphql
+Write subgraph file build\NftMarketplace\abis\NftMarketplace.json
+Write subgraph manifest build\subgraph.yaml
+√ Write compiled subgraph to build\
+Add file to IPFS build\schema.graphql
+              .. QmdkbteVQWQ5A3CTM75LnExzSzaKXikVEfbSSRkPgSZdNX
+Add file to IPFS build\NftMarketplace\abis\NftMarketplace.json
+              .. QmQAVqY3z5hZfgVoVrF1bkrNrRBFxzetAFxRkMH2cpVQ94
+Add file to IPFS build\NftMarketplace\NftMarketplace.wasm
+              .. QmVnDuKQnndRu1xatwinM5gHa1khEyvsGjPSqGrPusJz5K
+√ Upload subgraph to IPFS
+
+Build completed: QmcWvzmn6VnMr1J8uB4JPKpELjYg5B5hXsHsqbBCn7i8qG
+
+Deployed to https://thegraph.com/studio/subgraph/nft-marketplace-fcc
+
+Subgraph endpoints:
+Queries (HTTP):     https://api.studio.thegraph.com/query/32932/nft-marketplace-fcc/v0.0.1
