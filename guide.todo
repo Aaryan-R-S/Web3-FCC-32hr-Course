@@ -1,0 +1,8 @@
+☐ Clone the repository
+☐ yarn
+☐ yarn add @openzeppelin/contracts
+☐ yarn hardhat compile
+☐ yarn hardhat test
+☐ yarn hardhat deploy
+☐ yarn hardhat node + yarn hardhat run scripts/upgrade-box-manual.js --network localhost
+☐ yarn hardhat deploy --network rinkeby + yarn hardhat run scripts/upgrade-box-manual.js --network rinkeby
