@@ -1,5 +1,7 @@
 ☐ Assuming contrats are ready
 ☐ pip3 install solc-select
+☐ solc-select install 0.8.7
 ☐ solc-select use 0.8.7
 ☐ pip3 install slither-analyzer
-☐ yarn slither
+☐ slither .
+☐ slither . --solc-remaps '@openzeppelin=node_modules/@openzeppelin @chainlink=node_modules/@chainlink' --exclude naming-convention,external-function,low-level-calls
