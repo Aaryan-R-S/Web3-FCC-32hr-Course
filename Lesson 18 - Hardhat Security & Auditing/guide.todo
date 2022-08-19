@@ -1,0 +1,5 @@
+☐ Assuming contrats are ready
+☐ pip3 install solc-select
+☐ solc-select use 0.8.7
+☐ pip3 install slither-analyzer
+☐ yarn slither

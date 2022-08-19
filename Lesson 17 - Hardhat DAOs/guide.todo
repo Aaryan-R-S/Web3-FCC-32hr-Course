@@ -1,0 +1,10 @@
+☐ yarn add --dev hardhat
+☐ yarn hardhat
+☐ yarn add --dev @openzeppelin/contracts
+☐ yarn hardhat compile
+☐ yarn hardhat deploy
+☐ yarn hardhat test
+☐ yarn hardhat deploy --network rinkeby
+☐ yarn hardhat run scripts/propose.ts --network localhost
+☐ yarn hardhat run scripts/vote.ts --network localhost
+☐ yarn hardhat run scripts/queue-and-execute.ts --network localhost
